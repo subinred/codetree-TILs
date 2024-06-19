@@ -4,10 +4,10 @@ let a = Number(input[0]);
 let b = Number(input[1]);
 let c = Number(input[2]);
 
-let array = [];
-array.push(a);
-array.push(b);
-array.push(c);
-
-array.sort();
-console.log(array[1]);
+if (a > b && a < c) {
+    console.log(a);
+} else if (b > a && b < c) {
+    console.log(b);
+} else {
+    console.log(c);
+}
