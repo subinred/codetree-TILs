@@ -2,6 +2,6 @@ const fs = require('fs');
 let input = fs.readFileSync(0).toString().split('\n');
 let n = Number(input[0]);
 let array = input[1].split(' ');
+array = array.map(Number);
 array.sort();
-process.stdout.write(array[0]+ ' ');
-process.stdout.write(array[n-1]);
+console.log(array[0] + ' ' + array[n-1]);
