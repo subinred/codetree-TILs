@@ -21,6 +21,6 @@ function testF(inputLength)  {
     process.stdout.write(maxIndex[maxIndex.length-1] + ' ');
     if(maxIndex[maxIndex.length-1] != 1) {
         max = 0;
-        testF(Number(maxIndex[maxIndex.length-1])-2);
+        testF(Number(maxIndex[maxIndex.length-1])-1);
     }
 }
